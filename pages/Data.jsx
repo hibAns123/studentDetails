@@ -8,7 +8,7 @@ function Data() {
     // const [registrationData, setRegistrationData] = useState([]);
     const [users,setUsers]=useState([])
     useEffect(() => {
-      axios.get('http://localhost:5001/getUsers')
+      axios.get('https://stud-details-server-1.onrender.com/getUsers')
         .then(response => {
           // Check if the response data is an array
           if (Array.isArray(response.data)) {
