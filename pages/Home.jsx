@@ -111,35 +111,7 @@ function Home() {
          </div>
     </div>
 
-      <div>
-        <h2>Registered Students</h2>
-        <table>
-          <thead>
-            <tr>
-              <th>Name</th>
-              <th>Address</th>
-              <th>Mobile</th>
-              <th>Email</th>
-              <th>Gender</th>
-              <th>Date of Birth</th>
-              <th>Course</th>
-            </tr>
-          </thead>
-          <tbody>
-            {registrationData.map((student, index) => (
-              <tr key={index}>
-                <td>{student.name}</td>
-                <td>{student.address}</td>
-                <td>{student.mobile}</td>
-                <td>{student.email}</td>
-                <td>{student.gender}</td>
-                <td>{student.dob}</td>
-                <td>{student.course}</td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
+   
     </div>
   )
 }

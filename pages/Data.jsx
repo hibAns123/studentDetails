@@ -1,5 +1,6 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom';
 
 // import { getRegisteredStudentsAPI } from '../services/allAPIs';
 
@@ -49,7 +50,10 @@ function Data() {
         ))}
       </tbody>
     </table>
-  </div>
+<Link to={'/home'}>
+      <button style={{backgroundColor:'orange',color:'white',padding:"10px",border:'0px',marginTop:'50px'}}>Back to home</button>
+  
+</Link>  </div>
   )
 }
 
